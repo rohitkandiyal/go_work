@@ -35,3 +35,7 @@ func main()  {
 	fmt.Println(my_rect.area())
 	fmt.Println(my_rect.perimeter())
 }
+
+
+
+// LEARN ABOUT TYPE ASSERTIONS AND TYPE SWITCH... left as of now
