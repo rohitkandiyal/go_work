@@ -3,12 +3,12 @@
 package main
 
 import (
-	"fmt";
+	"fmt"
 )
 
-func main()  {
+func main() {
 	str1 := "Greetings and\n\"Salutations\""
-	
+
 	// raw strings is between ``
 	str2 := `Greetings and
 	"Salutations"`
@@ -20,12 +20,12 @@ func main()  {
 	// Concatenation
 	f_name := "Rohit"
 	l_name := "Kandiyal"
-	fmt.Printf("Concatenation: %s\n", f_name+ " " +l_name)
+	fmt.Printf("Concatenation: %s\n", f_name+" "+l_name)
 
 	// str working
 	fmt.Printf("\n####int str working####\n")
 	s := "Hello there"
 	b := s[6]
-	fmt.Println(b)				// prints 116 which is UTF-8 encoding of "t"
-	
+	fmt.Println(b) // prints 116 which is UTF-8 encoding of "t"
+
 }

@@ -1,6 +1,5 @@
-// Structs here are like dicts. But we can create methods(check 4 below) on a struct and in that way it behaves like a class. 
+// Structs here are like dicts. But we can create methods(check 4 below) on a struct and in that way it behaves like a class.
 // As it can have attributes and methods both.
-
 
 package main
 
@@ -9,22 +8,22 @@ import (
 )
 
 type Wheel struct {
-	radius int
+	radius   int
 	material string
 }
 
 // Nested struct
 type car struct {
-	make string
-	model string
-	height int
+	make       string
+	model      string
+	height     int
 	frontwheel Wheel
-	rearwheel Wheel
+	rearwheel  Wheel
 }
 
 // Embedded struct
 type Truck struct {
-	make string
+	make  string
 	model string
 	Wheel
 }
@@ -34,11 +33,12 @@ type auth_info struct {
 	username string
 	password string
 }
+
 func (auth_i auth_info) basic_auth() string {
 	return fmt.Sprintf("Authorization: Basic %s:%s", auth_i.username, auth_i.password)
 }
 
-func main()  {
+func main() {
 
 	// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 	// 1) STRUCTS
@@ -48,7 +48,6 @@ func main()  {
 	mycyclewheel.material = "castIron"
 
 	fmt.Printf("My cycle's wheel radius is %d amd it is made of %s \n", mycyclewheel.radius, mycyclewheel.material)
-
 
 	mycar := car{}
 
@@ -67,10 +66,10 @@ func main()  {
 	// More usage of anonomous struct is in nested structs... we can have an anonymous struct inside a struct
 
 	mycar1 := struct {
-		make string
+		make  string
 		model string
-	} {
-		make: "jeep",
+	}{
+		make:  "jeep",
 		model: "compass",
 	}
 
@@ -84,7 +83,7 @@ func main()  {
 
 	mytruck.make = "Tata"
 	mytruck.model = "Neo"
-	mytruck.radius = 30						// so we are able to directly access wheel's properties unlike nested structs
+	mytruck.radius = 30 // so we are able to directly access wheel's properties unlike nested structs
 	mytruck.material = "SolidIron"
 
 	fmt.Printf("My truck is %s %s and wheel radius is %d which is made of %s \n", mytruck.make, mytruck.model, mytruck.radius, mytruck.material)
@@ -93,7 +92,7 @@ func main()  {
 
 	// 4) STRUCT METHODS - we can define a function on a struct which will manipulate the struct.
 
-	myauth_info := auth_info {
+	myauth_info := auth_info{
 		username: "rohit",
 		password: "pass",
 	}

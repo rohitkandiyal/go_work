@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main()  {
+func main() {
 
 	//	//////////////////////// IF - ELSE //////////////////
 	num1 := 20
@@ -18,8 +18,7 @@ func main()  {
 		fmt.Printf("bigger\n")
 	}
 
-
-	if num3 := 35; num3 < 40 {							// SCOPE of num3 is within this if block.
+	if num3 := 35; num3 < 40 { // SCOPE of num3 is within this if block.
 		fmt.Printf("kasmdkladm\n")
 	}
 

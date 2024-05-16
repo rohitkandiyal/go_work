@@ -1,23 +1,23 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
-func main()  {
+func main() {
 	// FOR Loop in four ways are done in Go
 	// Way 1
-	for i:=0; i < 10 ;i++ {
+	for i := 0; i < 10; i++ {
 		fmt.Println(i)
-	}	
-	
+	}
+
 	// Now for above has three parts(initialization; condition; increment) and all these parts are optional
 
 	// Way 2 - WHILE LOOP -- it is basically a for loop with just condition in Go - leaving initialization and increment
 	fmt.Println("#####################################")
 	a := 5
 	b := 10
-	for a <= b{
+	for a <= b {
 		fmt.Println(a)
 		a = a + 2
 	}
@@ -25,8 +25,8 @@ func main()  {
 	// Way 3 - Infinite LOOP -- it is basically a for loop with nothing - leaving initialization;condtion and increment
 
 	// for {
-    //     fmt.Println("Hello")
-    // }
+	//     fmt.Println("Hello")
+	// }
 
 	// Way 4 - for-range loop - to iterate over built-in types like slice, strings, maps
 	fmt.Println("#####################################")
@@ -36,11 +36,11 @@ func main()  {
 		fmt.Println(i, v)
 	}
 
-	for _, v := range evenVals {			// if index is not reqd
+	for _, v := range evenVals { // if index is not reqd
 		fmt.Println(v)
 	}
 
-	for k := range evenVals {				// if value is not needed
+	for k := range evenVals { // if value is not needed
 		fmt.Println(k)
 	}
 
@@ -49,10 +49,7 @@ func main()  {
 
 	str := "rohit"
 	for i, r := range str {
-        fmt.Println(i, r, string(r))
-    }
+		fmt.Println(i, r, string(r))
+	}
 
-
- }
-
-
+}

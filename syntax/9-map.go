@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt";
+	"fmt"
 	"maps"
 )
 
-func main()  {
+func main() {
 	totalWins := map[string]int{}
 	totalWins["Orcas"] = 1
 	totalWins["Lions"] = 2
@@ -24,10 +24,10 @@ func main()  {
 	}
 	v, ok := m["hello"]
 	fmt.Println(v, ok)
-	
+
 	v, ok = m["world"]
 	fmt.Println(v, ok)
-	
+
 	v, ok = m["goodbye"]
 	fmt.Println(v, ok)
 

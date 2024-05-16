@@ -1,15 +1,15 @@
 package main
 
 import (
-	"fmt";
-	"slices";
+	"fmt"
+	"slices"
 )
 
-func main()  {
+func main() {
 	var a []int
 	fmt.Println(a)
 	fmt.Println(len(a))
-	fmt.Println(a == nil) 		// empty check
+	fmt.Println(a == nil) // empty check
 
 	// Compare
 	fmt.Println("######Compare######")
