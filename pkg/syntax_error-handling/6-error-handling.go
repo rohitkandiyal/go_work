@@ -1,7 +1,7 @@
 package main
 
 import (
-	"errors" // can be used to set what err mssg to pass
+	// "errors" // can be used to set what err mssg to pass
 	"fmt"
 	"strconv"
 )
