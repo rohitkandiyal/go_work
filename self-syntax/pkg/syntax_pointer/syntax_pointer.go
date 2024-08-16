@@ -32,6 +32,6 @@ func main() {
 	fmt.Println("Fourth:", fourth)
 	fmt.Println("Value at pointer Fourth:", *fourth)
 	fmt.Println("Fifth:", fifth)
-	fmt.Println("Value at pointer Fifth:", **fifth)
-
+	fmt.Println("Value at pointer Fifth:", *fifth)
+	fmt.Println("value of Value at pointer Fifth:", **fifth)
 }

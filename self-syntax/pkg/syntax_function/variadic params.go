@@ -5,7 +5,7 @@ import (
 )
 
 func printSuppliers(product string, suppliers ...string) {
-	for _, supplier := range suppliers {
+	for _, supplier := range suppliers { // THis means values are always received as slice and therefore we can enumerate them.
 		fmt.Println("Product:", product, "Supplier:", supplier)
 	}
 }
