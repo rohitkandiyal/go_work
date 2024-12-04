@@ -9,6 +9,14 @@ type Expense interface {
 	getCost(annual bool) float64
 }
 
+// Passing interface as an argument to a function
+func calcTotal(expenses []Expense) (total float64) {
+	for _, item := range expenses {
+		total += item.getCost(true)
+	}
+	return
+}
+
 func main() {
 	kayak := Product{"Kayak", "Watersports", 275}
 	insurance := Service{"Boat Cover", 12, 89.50}
@@ -29,5 +37,7 @@ func main() {
 	for _, expense := range expenses {
 		fmt.Println("Expense:", expense.getName(), "Cost:", expense.getCost(true))
 	}
+
+	fmt.Println("Total expense incurred:", calcTotal(expenses))
 
 }
